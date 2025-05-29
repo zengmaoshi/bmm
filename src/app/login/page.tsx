@@ -44,7 +44,7 @@ export default function Page() {
               state.showBg && '!text-white/90'
             )}
           >
-            {WEBSITE_NAME}
+            曾胖的黑盒
           </h3>
         </Link>
         <Switch size="sm" isSelected={state.showBg} onValueChange={handleShowBgChange} />
@@ -56,7 +56,7 @@ export default function Page() {
             state.showBg && '!text-black/80'
           )}
         >
-          Log in to {WEBSITE_NAME}
+          Log in to 曾胖的黑盒
         </h1>
         <div className="w-96 rounded-xl p-10 backdrop-blur light:bg-black/10 dark:bg-white/30">
           {state.isRedirecting ? (
