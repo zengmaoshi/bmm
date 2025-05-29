@@ -16,7 +16,7 @@ export default async function Page() {
   return (
     <div className="mx-auto -mt-[10vh] h-full w-[32rem] flex-col flex-center">
       <h1 className="mb-12 text-3xl">
-        👋 {session?.user.name}，欢迎使用 {WEBSITE_NAME}
+        👋 {session?.user.name}，欢迎使用 曾胖的黑盒
       </h1>
       <div className="grid grid-cols-2 gap-4">
         {LINKS.map((link, idx) => (
