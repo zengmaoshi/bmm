@@ -42,7 +42,7 @@ export default function AdminNav() {
               alt="logo"
             />
             <h3 className="font-mono text-2xl font-black text-foreground-700">
-              {WEBSITE_NAME} CMS
+              曾胖的黑盒 CMS
             </h3>
           </div>
         </Link>
