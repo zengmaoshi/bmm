@@ -1,7 +1,7 @@
 // ! 这里的数据在客户端、服务端都可调用，不要在这里存储敏感数据
 
 /** 网站名称 */
-export const WEBSITE_NAME = 'BMM'
+export const WEBSITE_NAME = '曾胖的黑盒'
 
 export const WEBSITE_KEYWORDS =
   '开源书签管理, AI整理书签, 开发者工具, 网页收藏神器, 跨平台书签同步, 优质网站导航, 书签云管理'
