@@ -118,7 +118,7 @@ export const Assets = {
 }
 
 export const ExternalLinks = {
-  REPO: 'https://github.com/Y80/bmm',
+  REPO: 'https://github.com/zengmaoshi/bmm',
 } as const
 
 /** 默认情况下每页获取的书签个数；出于栅格布局的考虑这里选用 24 */
