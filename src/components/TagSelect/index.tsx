@@ -7,7 +7,7 @@ import RcSelect from 'rc-select'
 import 'rc-select/assets/index.css'
 import { ReactNode, useEffect, useMemo } from 'react'
 import style from './style.module.css'
-
+import { Analytics } from "@vercel/analytics/next"
 type ValueType = TagId[]
 
 interface Props {
