@@ -1,5 +1,4 @@
 import { testTagNameOrPinyin } from '@/utils'
-import { Analytics } from "@vercel/analytics/next"
 import { Chip, cn, ScrollShadow } from '@heroui/react'
 import { Icon } from '@iconify/react'
 import { useSetState, useThrottleFn } from 'ahooks'
