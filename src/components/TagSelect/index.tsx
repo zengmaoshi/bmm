@@ -7,7 +7,7 @@ import RcSelect from 'rc-select'
 import 'rc-select/assets/index.css'
 import { ReactNode, useEffect, useMemo } from 'react'
 import style from './style.module.css'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/next'
 type ValueType = TagId[]
 
 interface Props {
@@ -70,8 +70,9 @@ export default function TagSelect(props: Props) {
   }, [props.endContent])
 
   return (
-    <Analytics/>
+    
     <div role="tag-select">
+      <Analytics />
       <div
         className={cn(
           'relative cursor-not-allowed overflow-hidden rounded-medium bg-default-50 p-4 py-3 text-center text-xs text-foreground-400',
