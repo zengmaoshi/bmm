@@ -2,6 +2,7 @@
 
 import { NavUser, ReButton, ThemeToggle } from '@/components'
 import { IconButtonProps, NavBarProps } from '@/components/common'
+import { Analytics } from '@vercel/analytics/next'
 import { MobileTagPicker } from '@/components/MobileTagPicker'
 import { usePageUtil } from '@/hooks'
 import { Assets, Background, ExternalLinks, IconNames, PageRoutes, WEBSITE_NAME } from '@cfg'
@@ -86,6 +87,7 @@ export function PublicAndUserNavbar(props: Props) {
   }
 
   return (
+    <Analytics />
     <Navbar
       {...NavBarProps}
       isMenuOpen={state.isSelectedMenuToggle}
