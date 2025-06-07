@@ -2,7 +2,7 @@ import { ReButton } from '@/components/re-export'
 import { auth } from '@/lib/auth'
 import { IconNames, PageRoutes, WEBSITE_NAME } from '@cfg'
 import { cn } from '@heroui/react'
-
+import { Analytics } from '@vercel/analytics/next'
 const LINKS = [
   { label: '新建书签', href: PageRoutes.User.bookmarkSlug('new') },
   { label: '新建标签', href: PageRoutes.User.tagSlug('new') },
@@ -15,6 +15,7 @@ export default async function Page() {
 
   return (
     <div className="mx-auto -mt-[10vh] h-full w-[32rem] flex-col flex-center">
+      <Analytics />
       <h1 className="mb-12 text-3xl">
         👋 {session?.user.name}，欢迎使用 曾胖的黑盒
       </h1>
