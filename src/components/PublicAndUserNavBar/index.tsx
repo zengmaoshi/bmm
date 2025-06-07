@@ -87,13 +87,15 @@ export function PublicAndUserNavbar(props: Props) {
   }
 
   return (
-    <Analytics />
+    
     <Navbar
       {...NavBarProps}
       isMenuOpen={state.isSelectedMenuToggle}
       onMenuOpenChange={(v) => setState({ isSelectedMenuToggle: v })}
     >
       <NavbarBrand className="shrink-0 grow-0 max-xs:basis-20 xs:basis-56">
+        <Analytics />
+      
         <Link href={routes.INDEX} className="gap-4 flex-items-center">
           <Image src={Assets.LOGO_SVG} width={32} height={32} alt="logo" priority />
           <h3 className="translate-y-0.5 font-mono text-2xl font-light text-foreground-700">
