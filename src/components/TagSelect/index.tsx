@@ -1,4 +1,5 @@
 import { testTagNameOrPinyin } from '@/utils'
+import { Analytics } from "@vercel/analytics/next"
 import { Chip, cn, ScrollShadow } from '@heroui/react'
 import { Icon } from '@iconify/react'
 import { useSetState, useThrottleFn } from 'ahooks'
@@ -69,6 +70,7 @@ export default function TagSelect(props: Props) {
   }, [props.endContent])
 
   return (
+    <Analytics/>
     <div role="tag-select">
       <div
         className={cn(
