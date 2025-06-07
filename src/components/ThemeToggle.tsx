@@ -7,7 +7,7 @@ import { useTheme } from 'next-themes'
 import { useState } from 'react'
 import { IconButtonProps } from './common'
 import ReButton from './re-export/ReButton'
-
+import { Analytics } from '@vercel/analytics/next'
 const ThemeListItems = [
   { key: 'light', label: 'Light', icon: IconNames.SUN },
   { key: 'dark', label: 'Dark', icon: IconNames.MOON_STARS },
@@ -27,6 +27,7 @@ export default function ThemeToggle() {
 
   return (
     <>
+      <Analytics />
       {/* 仅在 Mobile + Dark 条件下展示 */}
       <ReButton
         role="mobile-dark-button"
