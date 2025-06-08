@@ -39,7 +39,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
       suppressHydrationWarning
     >
       <body>
-             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9846050693867261" crossorigin="anonymous"></script>
+             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9846050693867261" ></script>
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
         )}
