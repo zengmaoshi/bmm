@@ -38,6 +38,10 @@ export default async function RootLayout({ children }: PropsWithChildren) {
       className="min-w-[350px] bg-background text-foreground"
       suppressHydrationWarning
     >
+   <head>
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9846050693867261"
+     crossorigin="anonymous"></script>
+   </head>
       <body>
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
